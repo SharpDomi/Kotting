@@ -1,4 +1,6 @@
 # Kotting
 Skripte C# 
 
-(  o  )Y(  o  )
+( o )Y( o )
+
+( * )
