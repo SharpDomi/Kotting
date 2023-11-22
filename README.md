@@ -2,5 +2,5 @@
 Skripte C# 
 
 ( o )Y( o )
-
-( i )
+ \   .   /  
+   ( i )
