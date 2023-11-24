@@ -1,0 +1,77 @@
+Console.Title ="F  R  O  G    *   M i   ! ! ! ! !";
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+Console.SetBufferSize(Console.LargestWindowWidth, Console.LargestWindowHeight); 
+Console.WriteLine("   ");
+Console.WriteLine(" Hallo Sonja!");
+Console.WriteLine(" Wie kann ich dir helfen?");
+Console.WriteLine(" Stelle eine Frage laut und drücke eine Taste...");
+
+Console.WriteLine("   "); 
+
+
+string[] Antwort = {"Würd ich machen!", "Auf jedena Fall!", "Naja...denk nochmal in Ruhe drüber nach! Oft kommt die einsicht mit der Ruhe!",
+"Auf keinen Fall!", "Es gibt Punkte dafür und dagegen... hmmm was würdest du sagen überwiegt wenn auch nur leicht?", "Fällt dir jemand ein der dir da helfen könnt?",
+"Es gibt jemanden der dir da weiterhelfen könnte...","Frag Chantal","Red mal mit Heinrich", "Mach es einfach...manchmal muss man Risiken eingehen!", 
+"Du bist dabei einen Fehler zu machen...sei vorsichtig!", "Warum denn nicht...", "Du hast bereits selbst eine Antwort", 
+"Dazu hat mir Domi leider nichts programmiert... der Schlawiener!!!! Doof dass ich nur ein Programm bin ich find dich nämlich echt nett <3... aber gut... ruf Domi  mal dazu an und frag ihn gleich warum er mir dazu nichts gesagt hat.",
+"Lass das Thema ruhen und entscheide dich morgen... eine Nacht drüber schlafen klärt die Dinge oft.", "Ruf Domi mal an deswegen!", "NEIN.", 
+"Schnell...wie ist dein Bauchgefühl dazu?", "Ich würde eher NEIN sagen...", "Auf einer Skala von 1 - 10 was würdest du sagen? 1 ist komplett negativ und 10 komplett positiv... wo ordnest du das ein?",
+"Was würdest du einer Freundin raten die in der gleichen Situation steckt?", "Probieren geht über studieren... also los!", "Lass es!", "positiv!", 
+"NEGATIV!"};
+
+Random zufall = new Random();
+string Orakel = Antwort[zufall.Next(Antwort.Length)];
+
+
+Console.ReadKey();
+Console.WriteLine("   ");
+Console.WriteLine(". . . lass nich kurz drüber nachdenken . . . ");
+Console.WriteLine("   ");
+Console.ReadKey();
+Console.WriteLine("   ");
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine($"  {Orakel}");
+
+Console.ReadKey();
+Console.WriteLine("   ");
+Console.WriteLine("   ");
+Console.WriteLine("   ");
+Console.WriteLine("   ");
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.WriteLine("Du darfst eine zweite Frage stellen...");
+
+
+string[] Antwort2 = {"Würd ich machen!", "Aber logisch!", "Was würde Frida tun?", "naaajaaa... da wär ich vorsicht!", "Das wurde denk ich schon beantwortet!", "Frag Domi", "klar!", "Auf jedena Fall!", "Naja...denk nochmal in Ruhe drüber nach! Oft kommt die einsicht mit der Ruhe!",
+"Auf keinen Fall!", "Es gibt Punkte dafür und dagegen... hmmm was würdest du sagen überwiegt wenn auch nur leicht?", "Versuch Abstand davon zu gewinnnen...",
+"Es gibt jemanden der dir da weiterhelfen könnte...", "Mach es einfach...manchmal muss man Risiken eingehen!", "Vielleicht gibts einen Kompromiss?", 
+"Du bist dabei einen Fehler zu machen...sei vorsichtig!", "Viellleicht weiß Heinrich was", "Warum denn nicht...", "Du hast bereits selbst eine Antwort", "Schlaf drüber!",
+"Lass das Thema ruhen und entscheide dich morgen... eine Nacht drüber schlafen klärt die Dinge oft.", "NEIN.", "Schnell...wie ist dein Bauchgefühl dazu?", "Mach jetzt was anderes... zur Ablenkung! Morgen ist auch noch ein Tag!",
+"Was würdest du einer Freundin raten die in der gleichen Situation steckt?", "Was würdest du deinen Kindern raten wenn sie dich das fragen würden?",
+"ein klares JAAAAAAAA","Rückfrage: Warum ist dir das gerade wichtig?", "Dazu fällt mir ein Name ein... du weißt welcher!!!",  "Ich bin nur ein Programm...zwar ein äußerst entzückendes ;-* aber ich glaube darüber musst du mit einem richtigen Menschen sprechen!",
+"Die Frage lässt sich im Moment nicht beantworten...du ahnst warum...", 
+"Ich würde eher JA sagen..."};
+
+Random zufall2 = new Random();
+string Orakel2 = Antwort2[zufall2.Next(Antwort2.Length)];
+
+
+
+Console.WriteLine(" ");
+Console.WriteLine("");
+Console.ReadKey();
+Console.ForegroundColor = ConsoleColor.Green;
+
+Console.WriteLine($"da sage ich dir: ...{Orakel2}");
+
+
+Console.ReadKey();
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.WriteLine(" ");
+Console.WriteLine(" ");
+Console.WriteLine("...   I hoff des hod da ghoiffa!   ");
+Console.WriteLine("  ");
+Console.WriteLine("  ");
+Console.WriteLine(" *************  S E R V U S ************* ");
+
+Console.ReadKey();
