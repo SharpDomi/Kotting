@@ -1,0 +1,25 @@
+int Würfel1 = 0;
+		int Würfel2 = 1;
+		int Versuche = 0;
+		Random Wurf = new Random();
+		while(Würfel1 != Würfel2 && Würfel1 != 6 && Würfel2 != 6)
+		{ 
+		Console.ReadKey();
+		
+		
+	    Würfel1 = Wurf.Next(1, 7);
+    	Würfel2 = Wurf.Next(1, 7);
+    	Console.WriteLine(Würfel1);
+	    Console.WriteLine(Würfel2); 
+		Versuche++;}
+		
+		Console.WriteLine("Versuche " + Versuche);
+		
+
+		
+		Console.ReadKey();
+		
+		
+		
+		
+		
