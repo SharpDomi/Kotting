@@ -1,0 +1,44 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Geben Sie einen Satz mit einem Wochentag ein:");
+        string benutzerEingabe = Console.ReadLine().ToLower(); // In Kleinbuchstaben umwandeln, um die Groß-/Kleinschreibung zu ignorieren
+
+        if (benutzerEingabe.Contains("montag"))
+        {
+            Console.WriteLine("Das Stichwort 'Montag' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("dienstag"))
+        {
+            Console.WriteLine("Das Stichwort 'Dienstag' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("mittwoch"))
+        {
+            Console.WriteLine("Das Stichwort 'Mittwoch' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("donnerstag"))
+        {
+            Console.WriteLine("Das Stichwort 'Donnerstag' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("freitag"))
+        {
+            Console.WriteLine("Das Stichwort 'Freitag' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("samstag"))
+        {
+            Console.WriteLine("Das Stichwort 'Samstag' wurde gefunden!");
+        }
+        else if (benutzerEingabe.Contains("sonntag"))
+        {
+            Console.WriteLine("Das Stichwort 'Sonntag' wurde gefunden!");
+        }
+        else
+        {
+            Console.WriteLine("Kein bekanntes Wochentags-Stichwort wurde gefunden.");
+        }
+    }
+}
+
