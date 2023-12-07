@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // Benutzer nach der Anzahl der Schüler in der Klasse fragen
+        Console.Write("How many students are in your class: ");
+        int studentCount = Convert.ToInt32(Console.ReadLine());
+
+        // Benutzer nach den Namen der Schüler fragen und sie in der Liste speichern
+        Console.WriteLine("Please input the names of the students: ");
+        List<string> students = new List<string>();
+        for (int i = 0; i < studentCount; i++)
+        {
+            students.Add(Console.ReadLine());
+        }
+
+        // Ausgabe der sortierten Liste der Schüler
+        Console.WriteLine("--------------");
+        students.Sort();
+        for (int i = 0; i < students.Count; i++)
+        {
+            Console.WriteLine(students[i]);
+        }
+
+        // Benutzer nach dem zu entfernenden Schülernamen fragen
+        Console.WriteLine("--------------");
+        Console.Write("Enter the name of the student to remove: ");
+        string studentToRemove = Console.ReadLine();
+
+        // Überprüfen, ob der Schülername in der Liste vorhanden ist und entfernen
+        if (students.Contains(studentToRemove))
+        {
+            students.Remove(studentToRemove);
+            Console.WriteLine($"Student '{studentToRemove}' removed.");
+        }
+        else
+        {
+            Console.WriteLine($"Student '{studentToRemove}' not found in the list.");
+        }
+
+        // Ausgabe der aktualisierten Liste der Schüler
+        Console.WriteLine("--------------");
+        for (int i = 0; i < students.Count; i++)
+        {
+            Console.WriteLine(students[i]);
+        }
+
+        // Warten, bevor das Programm geschlossen wird
+        Console.ReadKey();
+    }
+}
+
